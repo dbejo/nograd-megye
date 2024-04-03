@@ -17,7 +17,7 @@ export default function OneButtonCard({
       </div>
       <div className="flex justify-center px-6 py-4">
         <a href={buttonPath}>
-          <button className="rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700">
+          <button className="rounded bg-green-700 px-4 py-2 font-bold text-white hover:bg-green-800">
             {buttonText}
           </button>
         </a>

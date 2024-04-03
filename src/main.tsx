@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import PageWrapper from "./components/PageWrapper";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,14 @@ const router = createBrowserRouter([
   {
     path: "/gallery",
     element: <Gallery />,
+  },
+  {
+    path: "/contact",
+    element: (
+      <PageWrapper>
+        <Contact />
+      </PageWrapper>
+    ),
   },
 ]);
 

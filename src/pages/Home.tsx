@@ -1,6 +1,7 @@
 import ArticleCard from "../components/ArticleCard";
 import OneButtonCard from "../components/OneButtonCard";
 import { ArticlePreview } from "../models/ArticlePreview";
+import Contact from "./Contact";
 
 export default function Home() {
   const articles: ArticlePreview[] = [
@@ -37,7 +38,7 @@ export default function Home() {
   ];
   return (
     <main>
-      <div className="flex h-96 w-full flex-col items-center justify-center bg-gray-200">
+      <div className="mb-4 flex h-96 w-full flex-col items-center justify-center bg-gray-200">
         <h1 className="mb-8 text-6xl font-extrabold">
           Fedezzük fel Nógrád megyét!
         </h1>
@@ -46,7 +47,7 @@ export default function Home() {
         </p>
       </div>
       <div className="mx-auto flex max-w-screen-xl flex-col">
-        <div className="my-4">
+        <div className="mb-4">
           <h2 className="mb-4 text-2xl font-bold">Hírek</h2>
           <div className="grid gap-3 lg:grid-cols-4">
             {articles.map((article) => (
@@ -54,7 +55,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="my-4">
+        <div className="mb-4">
           <h2 className="mb-4 text-2xl font-bold">Ajánlatok</h2>
           <div className="grid gap-6 lg:grid-cols-3">
             <OneButtonCard
@@ -76,6 +77,10 @@ export default function Home() {
               buttonPath="#"
             />
           </div>
+        </div>
+        <div className="mb-4">
+          <h2 className="mb-4 text-2xl font-bold">Írj nekünk</h2>
+          <Contact />
         </div>
       </div>
     </main>
