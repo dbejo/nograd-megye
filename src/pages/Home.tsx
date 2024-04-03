@@ -1,4 +1,5 @@
 import ArticleCard from "../components/ArticleCard";
+import OneButtonCard from "../components/OneButtonCard";
 import { ArticlePreview } from "../models/ArticlePreview";
 
 export default function Home() {
@@ -44,11 +45,37 @@ export default function Home() {
           Történelemmel átszőtt táj, ahol a múlt és jövő találkozik.
         </p>
       </div>
-      <div className="m-4 mx-auto flex max-w-screen-xl">
-        <div className="grid gap-3 lg:grid-cols-4">
-          {articles.map((article) => (
-            <ArticleCard key={article.id} article={article} />
-          ))}
+      <div className="mx-auto flex max-w-screen-xl flex-col">
+        <div className="my-4">
+          <h2 className="mb-4 text-2xl font-bold">Hírek</h2>
+          <div className="grid gap-3 lg:grid-cols-4">
+            {articles.map((article) => (
+              <ArticleCard key={article.id} article={article} />
+            ))}
+          </div>
+        </div>
+        <div className="my-4">
+          <h2 className="mb-4 text-2xl font-bold">Ajánlatok</h2>
+          <div className="grid gap-6 lg:grid-cols-3">
+            <OneButtonCard
+              title="Szállások"
+              text="Válogass Nógrád megye legjobb szállásai közül. Élvezd a kedvezményeket és a kényelmet!"
+              buttonText="Keress szállást most!"
+              buttonPath="#"
+            />
+            <OneButtonCard
+              title="Programok"
+              text="Találd meg a tökéletes programot megyénkben!"
+              buttonText="Tovább a programokhoz!"
+              buttonPath="#"
+            />
+            <OneButtonCard
+              title="Éttermek"
+              text="Fedezd fel a helyi ízeket. Válogass számtalan vendéglátó hely közül!"
+              buttonText="Éttermek böngészése!"
+              buttonPath="#"
+            />
+          </div>
         </div>
       </div>
     </main>
