@@ -15,12 +15,16 @@ const router = createBrowserRouter([
   },
   {
     path: "/gallery",
-    element: <Gallery />,
+    element: (
+      <PageWrapper title="Galéria">
+        <Gallery />
+      </PageWrapper>
+    ),
   },
   {
     path: "/contact",
     element: (
-      <PageWrapper>
+      <PageWrapper title="Kapcsolat">
         <Contact />
       </PageWrapper>
     ),
