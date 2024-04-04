@@ -38,9 +38,9 @@ export default function Home() {
   ];
   return (
     <main>
-      <div className="mb-4 flex h-96 w-full flex-col items-center justify-center bg-gray-200">
+      <div className="mb-4 flex h-96 w-full flex-col items-center justify-center bg-gradient-to-r from-green-600 to-lime-600 text-white">
         <h1 className="mb-8 text-6xl font-extrabold">Nógrád megye</h1>
-        <p className="text-lg text-gray-500">
+        <p className="text-lg text-gray-100">
           Történelemmel átszőtt táj, ahol a múlt és jövő találkozik.
         </p>
       </div>
