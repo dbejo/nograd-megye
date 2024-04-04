@@ -2,20 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import Navbar from "./components/Navbar";
-import { RouterProvider, createHashRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import PageWrapper from "./components/PageWrapper";
 import Footer from "./components/Footer";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/nograd-megye/",
     element: <Home />,
     children: [
       {
-        path: "./gallery",
+        path: "/nograd-megye/gallery",
         element: (
           <PageWrapper title="Galéria">
             <Gallery />
@@ -23,7 +23,7 @@ const router = createHashRouter([
         ),
       },
       {
-        path: "./contact",
+        path: "/nograd-megye/contact",
         element: (
           <PageWrapper title="Kapcsolat">
             <Contact />
