@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import PageWrapper from "./components/PageWrapper";
+import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
   {
@@ -35,5 +36,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Navbar />
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>,
 );

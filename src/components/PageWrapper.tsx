@@ -6,7 +6,7 @@ export default function PageWrapper({
   title: string;
 }) {
   return (
-    <div className="pt-20">
+    <div className="pb-4 pt-20">
       <div className="mx-auto flex max-w-screen-xl">
         <div className="w-full">
           <h2 className="mb-4 text-2xl font-bold">{title}</h2>

@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <div className="flex">
-      <div className="flex w-1/2 flex-col">
+    <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:w-1/2">
         <div className="mb-4">
           <h3 className="mb-2 text-xl font-medium">Címünk</h3>
           <p>Salgotarjan, Ugribugri utca 2.</p>
@@ -28,7 +28,7 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <form>
           <div className="mb-6">
             <div className="mx-0 mb-1 sm:mb-4">

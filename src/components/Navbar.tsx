@@ -32,8 +32,8 @@ function Navbar() {
     <nav className="fixed w-full border-gray-200 bg-white dark:bg-gray-900">
       <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between py-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-            Nógrád megye
+          <span className="self-center whitespace-nowrap text-2xl font-semibold  dark:text-white">
+            Fedezzük fel Nógrád megyét!
           </span>
         </a>
         <div onClick={() => setOpen(!isOpen)}>
