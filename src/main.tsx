@@ -13,22 +13,24 @@ const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
-  },
-  {
-    path: "/gallery",
-    element: (
-      <PageWrapper title="Galéria">
-        <Gallery />
-      </PageWrapper>
-    ),
-  },
-  {
-    path: "/contact",
-    element: (
-      <PageWrapper title="Kapcsolat">
-        <Contact />
-      </PageWrapper>
-    ),
+    children: [
+      {
+        path: "./gallery",
+        element: (
+          <PageWrapper title="Galéria">
+            <Gallery />
+          </PageWrapper>
+        ),
+      },
+      {
+        path: "./contact",
+        element: (
+          <PageWrapper title="Kapcsolat">
+            <Contact />
+          </PageWrapper>
+        ),
+      },
+    ],
   },
 ]);
 
