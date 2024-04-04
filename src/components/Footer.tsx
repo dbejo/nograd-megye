@@ -8,10 +8,10 @@ export default function Footer() {
             <p>Történelemmel átszőtt táj, ahol a múlt és jövő találkozik.</p>
           </div>
           <div className="flex flex-col gap-1">
-            <a href="/">Főoldal</a>
-            <a href="/gallery">Galéria</a>
-            <a href="/">Ajánlatok</a>
-            <a href="/contact">Kapcsolat</a>
+            <a href="/nograd-megye/">Főoldal</a>
+            <a href="/nograd-megye/gallery">Galéria</a>
+            <a href="/nograd-megye/">Ajánlatok</a>
+            <a href="/nograd-megye/contact">Kapcsolat</a>
           </div>
           <div className="flex flex-col justify-center gap-3">
             <a href="#">
