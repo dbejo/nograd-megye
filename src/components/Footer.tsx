@@ -9,12 +9,12 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-1">
             <a href="/">Főoldal</a>
-            <a href="/">Galéria</a>
+            <a href="/gallery">Galéria</a>
             <a href="/">Ajánlatok</a>
-            <a href="/">Kapcsolat</a>
+            <a href="/contact">Kapcsolat</a>
           </div>
           <div className="flex flex-col justify-center gap-3">
-            <div>
+            <a href="#">
               <button className="mr-2 inline-flex items-center space-x-2 rounded bg-blue-500 p-2 font-semibold text-white">
                 <svg
                   className="h-5 w-5 fill-current"
@@ -26,8 +26,8 @@ export default function Footer() {
                 </svg>
               </button>
               Facebook
-            </div>
-            <div>
+            </a>
+            <a href="#">
               <button className="mr-2 inline-flex items-center space-x-2 rounded bg-red-600 p-2 font-semibold text-white">
                 <svg
                   className="h-5 w-5 fill-current"
@@ -38,8 +38,8 @@ export default function Footer() {
                 </svg>
               </button>
               Youtube
-            </div>
-            <div>
+            </a>
+            <a href="#">
               <button className="mr-2 inline-flex items-center space-x-2 rounded bg-red-500 p-2 font-semibold text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export default function Footer() {
                 </svg>
               </button>
               Google
-            </div>
+            </a>
           </div>
         </div>
       </div>
