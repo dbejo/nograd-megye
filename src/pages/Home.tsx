@@ -20,7 +20,7 @@ export default function Home() {
     new ArticlePreview(
       3,
       "Hello 3",
-      "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      "https://www.adobe.com/products/media_14562ad96c12a2f3030725ae81bd3ede1c68cb783.jpeg?width=750&format=jpeg&optimize=medium",
       "asdf adfasdfasdf asd",
     ),
     new ArticlePreview(
@@ -32,7 +32,7 @@ export default function Home() {
     new ArticlePreview(
       5,
       "Hello 5",
-      "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      "https://www.adobe.com/products/media_14562ad96c12a2f3030725ae81bd3ede1c68cb783.jpeg?width=750&format=jpeg&optimize=medium",
       "asdf adfasdfasdf asd",
     ),
   ];
