@@ -11,26 +11,24 @@ import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
   {
-    path: "/nograd-megye/",
+    path: "/",
     element: <Home />,
-    children: [
-      {
-        path: "/nograd-megye/gallery",
-        element: (
-          <PageWrapper title="Galéria">
-            <Gallery />
-          </PageWrapper>
-        ),
-      },
-      {
-        path: "/nograd-megye/contact",
-        element: (
-          <PageWrapper title="Kapcsolat">
-            <Contact />
-          </PageWrapper>
-        ),
-      },
-    ],
+  },
+  {
+    path: "/gallery",
+    element: (
+      <PageWrapper title="Galéria">
+        <Gallery />
+      </PageWrapper>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <PageWrapper title="Kapcsolat">
+        <Contact />
+      </PageWrapper>
+    ),
   },
 ]);
 

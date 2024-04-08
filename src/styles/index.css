@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-image {
+  background-image: url("https://www.turistamagazin.hu/media/thumbs/sa/lg/ov/salgo-vara-a-csillagok-szomszedja-b7c7c8f7-7033106.jpg");
+  background-position: 90% 25%;
+}
